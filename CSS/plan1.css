@@ -1,6 +1,6 @@
-.table{display:table;border-spacing: 5px;width: 100%}
+.ta{display:table;border-spacing: 5px;width: 100%}
 .line{display: table-row}
-.l1{display: table-cell;border-radius: 4px;background-color: antiquewhite;line-height: 4em}
-.l2{display: table-cell;border-radius: 4px;background-color: antiquewhite;line-height: 4em}
-.l3{display: table-cell;border-radius: 4px;background-color: antiquewhite;line-height: 4em}
+.l1{display: table-cell;border-radius: 4px;background-color: red;line-height: 4em}
+.l2{display: table-cell;border-radius: 4px;background-color: red;line-height: 4em}
+.l3{display: table-cell;border-radius: 4px;background-color: red;line-height: 4em}
 
