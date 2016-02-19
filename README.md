@@ -1,3 +1,0 @@
-# STUDY
-exercise
-
