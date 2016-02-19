@@ -2,16 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>魔镜</title>
     <style type="text/css" rel="stylesheet">
-        *{margin:0;padding:0;}
+        *{
+            margin:0;
+            padding:0;
+        }
+        img{
+            max-width:100%
+        }
+        body{
+            font-family:'微软雅黑',Arial, serif;
+            font-size:65%;
+            background:#68cdd5;
+        }
+        #container{
+            width:100%
+        }
+        #back{
+            width:18%;
+        }
+        #back img{
+            width:70%;
+            max-width:100px;
+            min-width:50px
+        }
+        #content{
+            margin:5% auto 0;
+            width:50%;
+            text-align: center;
+        }
+        #content img{
+            width:70%;
+            max-width: 400px;
+            min-width: 150px;
+        }
+        #main{
+            text-align:center;
+            width:50%;
+            margin:0 auto;
+            font-size:2.5em;
+            color:white;
+            padding:15% 0
+        }
+
+        .footer{
+            width:50%;
+            float:left;
+            text-align: center;
+        }
+        .footer img{
+            width:30%;
+        }
+        @media screen and (max-width:840px) {
+            *{
+                margin:0;
+                padding:0;
+            }
+            img{
+                max-width:100%
+            }
+            body{
+                font-family:'微软雅黑',Arial, serif;
+                font-size:65%;
+                background:#68cdd5;
+            }
+            #container{
+                width:100%
+            }
+            #back{
+                width:18%;
+            }
+            #back img{
+                width:70%;
+                max-width:70px;
+                min-width:50px
+            }
+            #content{
+                margin:5% auto 0;
+                width:50%;
+                text-align: center;
+            }
+            #content img{
+                width:70%;
+                max-width: 300px;
+                min-width: 150px;
+            }
+            #main{
+                text-align:center;
+                width:75%;
+                margin:0 auto;
+                font-size:1.6em;
+                color:white;
+                padding:35% 0
+            }
+
+            .footer{
+                width:50%;
+                float:left;
+                text-align: center;
+            }
+            .footer img{
+                width:35%;
+            }
+
+       }
+       @media screen and (max-width:480px){
+
+       }
 
     </style>
 </head>
 <body>
-<div id="header"></div>
-<div id="body"></div>
-<div id="footer"></div>
-<DIV></DIV>
+<div id="container">
+    <div id="back">
+        <img src="IMG/001.png">
+    </div>
+    <div id="content">
+        <img src="IMG/002.png">
+    </div>
+    <div id="main">
+        <P>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以及线下聚会桌游道具。</P>
+    </div>
+    <div id="spe">
+        <div class="footer"><img src="IMG/003.png"></div>
+        <div class="footer"><img src="IMG/004.png"></div>
+    </div>
+    <div><img src="IMG/004.png" ></div>
+</div>
 </body>
 </html>
