@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e93e53a9-ed47-416c-8416-d57a8d182f8f" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task5/img/004.png" afterPath="$PROJECT_DIR$/task5/img/004.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task5/img/005.png" afterPath="$PROJECT_DIR$/task5/img/005.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task5/img/006.png" afterPath="$PROJECT_DIR$/task5/img/006.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task5/img/007.png" afterPath="$PROJECT_DIR$/task5/img/007.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task5/img/008.png" afterPath="$PROJECT_DIR$/task5/img/008.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task5/img/009.png" afterPath="$PROJECT_DIR$/task5/img/009.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task5/index.html" afterPath="$PROJECT_DIR$/task5/1.html" />
-    </list>
+    <list default="true" id="e93e53a9-ed47-416c-8416-d57a8d182f8f" name="默认的" comment="" />
     <ignored path="STUDY.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +21,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task5/1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.103448">
-              <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.45077106">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task5/2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-85.5">
+              <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task5/2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.142857">
+              <caret line="176" column="1" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -42,18 +54,8 @@
       <file leaf-file-name="1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task5/1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.07143">
-              <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task4/1.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.4364261">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state vertical-scroll-proportion="-25.428572">
+              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="157" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -86,6 +88,8 @@
         <option value="$PROJECT_DIR$/task5/img/1.css" />
         <option value="$PROJECT_DIR$/task5/index.html" />
         <option value="$PROJECT_DIR$/task5/1.css" />
+        <option value="$PROJECT_DIR$/task5/2.html" />
+        <option value="$PROJECT_DIR$/task5/2.css" />
       </list>
     </option>
   </component>
@@ -583,31 +587,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task5/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.103448">
-          <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task5/img/banner.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task5/1.css">
+    <entry file="file://$PROJECT_DIR$/task4/1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-43.07143">
-          <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+        <state vertical-scroll-proportion="-0.4409722">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task4/1.css">
+    <entry file="file://$PROJECT_DIR$/task5/1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4364261">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state vertical-scroll-proportion="-25.428572">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="157" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task5/2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.142857">
+          <caret line="176" column="1" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task5/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-85.5">
+          <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task5/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45077106">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>
