@@ -11,6 +11,7 @@ img{
     color:white;
     font-size:65%;
     font-family: '微软雅黑', Arial, serif;
+    overflow: hidden;
 }
 .info{
     background-color: #5fc0cd;
