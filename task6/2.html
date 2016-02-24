@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="basic.css">
     <link rel="stylesheet" href="2.css">
-    <title>Title</title>
+    <title>投票</title>
 </head>
 <body>
 <div class="main">
@@ -34,7 +34,8 @@
         <div class="content_top">
             <div>
                 <p class="trans">发言讨论结束，请大家投票</p>
-                <div id="logo_3"></div>
+                <div id="playsong" onclick="myFunction()"></div>
+                <audio src="other/download-complete.wav" preload="auto" id="music"></audio>
                 <div class="triangle"></div>
                 <p class="click">点击得票数最多人的头像</p>
             </div>
@@ -48,6 +49,7 @@
                     <div class="green">
                         <p>1号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -56,6 +58,7 @@
                     <div class="green">
                         <p>2号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -64,6 +67,7 @@
                     <div class="green">
                         <p>3号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -72,6 +76,7 @@
                     <div class="green">
                         <p>4号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -80,6 +85,7 @@
                     <div class="green">
                         <p>5号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -88,6 +94,7 @@
                     <div class="green">
                         <p>6号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -96,6 +103,7 @@
                     <div class="green">
                         <p>7号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -104,6 +112,7 @@
                     <div class="green">
                         <p>8号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -112,6 +121,7 @@
                     <div class="green">
                         <p>9号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -120,6 +130,7 @@
                     <div class="green">
                         <p>10号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -128,6 +139,7 @@
                     <div class="green">
                         <p>11号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
                 <div class="box">
                     <div class="yellow">
@@ -136,16 +148,30 @@
                     <div class="green">
                         <p>12号</p>
                     </div>
+                    <div class="logo_4"></div>
                 </div>
             </div>
-            <div id="logo_4"></div>
+
         </div>
         <div class="content_bottom">
             <div class="line"></div>
             <div class="btn"><span>投死</span></div>
         </div>
-
     </div>
+    <script type="text/javascript">
+        var song=document.getElementById("music");
+        myFunction.songplaying=false;
+        function myFunction() {
+            if (myFunction.songplaying){
+                song.pause();
+                myFunction.songplaying=false;
+            }
+            else if (!myFunction.songplaying) {
+                song.play();
+                myFunction.songplaying=true;
+            }
+        }
+    </script>
 </div>
 </body>
 </html>
