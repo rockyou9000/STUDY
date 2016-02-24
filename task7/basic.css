@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    position: relative;
+    width:1920px;
+    font-size:65%;
+    font-family: '微软雅黑', Arial, serif;
+    overflow: hidden;
+}
+.container{
+    font-size: 1.8em;
+}
+.top{
+    width:100%;
+    height:40px;
+    font-size: 1em;
+    color:#29b078;
+    background-color:#fff;
+}
+.top p{
+    display:inline-block;
+    line-height: 40px;
+    position: relative;
+    left:350px;
+}
+#logo_1{
+    background: #fff url(logo/img.png) no-repeat 0 -1046px;
+    height:29px;
+    width:116px;
+    position: absolute;
+    top:7px;
+    right:360px;
+}
+.nav{
+    width:100%;
+    height:100px;
+    background-color:#29b078;
+}
+.nav img{
+    position: absolute;
+    top:65px;
+    left:350px;
+}
+.logo{
+    background: #29b078 url(logo/img.png) no-repeat 0 -610px;
+    height:4px;
+    width:100px;
+    position: relative;
+    top:-4px;
+    opacity: 0;
+}
+.title{
+    width:100px;
+    height:100px;
+    display: inline-block;
+    font-size: 1.5em;
+    color:#fff;
+    line-height: 100px;
+    text-align: center;
+    margin-right:-4px;
+    cursor: pointer
+}
+.title:hover p{
+    background:#52b089;
+}
+.title:hover div{
+    opacity: 1;
+}
+.wrap1{
+    position: absolute;
+    right:340px;
+}
+.footer{
+    background-color: #29b078;
+}
+.info{
+    height:170px;
+}
+.footer_left{
+    width:250px;
+    color:white;
+    font-size: 1.5em;
+    position:absolute;
+    left:350px;
+    bottom:60px;
+}
+#text_1{
+    margin-bottom: 60px;
+}
+.footer_middle{
+    width:250px;
+    color:white;
+    font-size: 1.5em;
+    position:absolute;
+    left:730px;
+    bottom:60px;
+}
+.footer_middle>p{
+    margin-bottom: 40px;
+}
+
+.cell{
+    width:100px;
+    margin:0 20px 0 0;
+    display: inline-block;
+}
+.footer_bottom{
+    color:white;
+    font-size: 1.5em;
+    position:absolute;
+    right:380px;
+    bottom:60px;
+}
+.footer_bottom p{
+    margin-bottom: 5px;
+}
+#logo_2{
+    background:#29b078 url(logo/img.png) no-repeat 0 -518px;
+    height:92px;
+    width:92px;
+}
+.copyright{
+    height:30px;
+    color:#fff;
+    text-align: center;
+    line-height: 30px;
+}
