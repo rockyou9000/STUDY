@@ -48,8 +48,10 @@
 .piece{
     position: relative;
     left:100px;
+    cursor: pointer;
 }
-#spe_name{
+.piece:hover div[class="circle"]{
+
     background-color:#f9a372 ;
 }
 .content{
@@ -74,6 +76,7 @@
 }
 .content>p{
     margin:50px 0;
+    line-height: 1.8em;
 }
 .potato{
     height:100px;
@@ -83,12 +86,13 @@
 #text_spe{
     float: right;
     width:550px;
+    line-height: 1.8em;
 }
 #block_1{
     position: relative;
     width:900px;
     left:320px;
-    top:130px;
+    top:150px;
     z-index: 1;
 }
 #text_bottom{
