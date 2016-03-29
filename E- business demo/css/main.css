@@ -1,0 +1,126 @@
+/*公用*/
+.comWidth{
+    width:1000px;
+    margin:0 auto;
+}
+.leftArea{
+    float:left;
+}
+.rightArea{
+    float:right;
+}
+a{color:#656565}
+
+
+/*topbar*/
+
+.topBar{
+    height:31px;
+    background-color: #F7F7F7;
+    line-height: 31px;
+}
+.collection{
+    background: #fff url(../images/icon/collection.jpg) no-repeat left center;
+    padding-left:19px;
+    font-weight:bold;
+}
+.topBar a:hover{color:red;}
+
+/*logo*/
+.logoBar{
+    height:85px;
+    background-color: #1D7AD9;
+}
+.logo{
+    padding-left:41px;
+    padding-top:13px;
+}
+
+/*serch*/
+.search_box{
+    width:430px;
+    padding-top: 23px;
+    margin-left: 185px;
+}
+.search_text{
+    width:360px;
+    height:35px;
+    line-height: 35px\9; /*css hack \9表示所有IE浏览器*/
+    background: #fff;
+    padding:0 5px;
+}
+.search_button{
+    width:70px;
+    height:35px;
+    font-size:1.4rem;
+    font-family:"microsoft Yahei","微软雅黑",serif;
+    background-color:#ff8c00;color:#fff;
+}
+/*shopcar*/
+
+.shopCar{width:145px;
+    height:35px;
+    background-color:#ff8c00;
+    margin-top:23px;
+    font-size:1.4rem;
+    font-family: "microsoft Yahei", "微软雅黑", serif;
+    line-height: 35px;
+    color:#fff;
+}
+.shopText{
+    height:100%;
+    width:87px;
+    background:#ff8c00 url(../images/icon/shopText.jpg) 10px center no-repeat;
+    border-right:#E27A00 solid 1px;
+    padding-left:40px;
+}
+.shopNum{
+    width:56px;
+    height:35px;
+    border-left:#E27A00 solid 1px;
+    background: url(../images/icon/shopNum.jpg) 33px center no-repeat;
+    text-align: right;
+    padding-right:29px;
+}
+
+/*导航*/
+.navBox{
+    font-size:1.6rem;
+    font-family: "microsoft Yahei", "微软雅黑", serif;
+    height:35px;
+    background-color: #1369C0;
+    color:#fff;
+
+}
+.shopClass{
+    width:190px;
+    line-height: 1.42857143;
+    padding:10px 0 0 0;
+    text-align: center;
+}
+.shopClass i{
+    width:11px;
+    height:7px;
+    overflow:hidden;
+    display:inline-block;
+    background: #1369C0 url(../images/icon/shopClass.jpg) left center no-repeat;
+    margin-left:11px;
+}
+.nav{
+    font-family: "microsoft Yahei", "微软雅黑", serif;
+    line-height: 35px;
+    border:none;
+}
+.nav li {
+    float:left;
+
+
+}
+.nav a {
+    width:100px;
+    height:35px;
+    display: inline-block;
+    text-align: center;
+    padding:0 35px;
+    color:#fff;
+}
