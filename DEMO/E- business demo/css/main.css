@@ -94,8 +94,10 @@ a{color:#656565}
 }
 .shopClass{
     width:190px;
-    line-height: 1.42857143;
+    line-height: 25px;
     padding:10px 0 0 0;
+}
+.shopClass p{
     text-align: center;
 }
 .shopClass i{
@@ -122,5 +124,23 @@ a{color:#656565}
     display: inline-block;
     text-align: center;
     padding:0 35px;
+    color:#fff;
+}
+
+/*商品弹出界面*/
+.shopClass_show{
+    font-size:1.4rem;
+    background-color: #4593FD;
+
+}
+.shopClass_item{
+    padding:14px 10px;
+}
+.shopClass_item .b {
+    font-size:1.6rem;
+    font-family:"microsoft Yahei", "微软雅黑", serif;
+    font-weight:bold;
+}
+.shopClass_item a{
     color:#fff;
 }
