@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../plugins/jquery2.1.4.js" type="text/javascript"></script>
+    <script>
+        var ab =0;
+        function next(){
+            $("#wrap_pic:eq(0)").animate(
+                    {marginLeft:"-990px"},1000,function(){
+                        var temp=$(this).clone();
+                        $(this).remove();
+                        temp.css("marginLeft","0");
+                        $("#wrap_pic").append(temp);
+            }
+        )
+        }
+        var intervalObj = window.setInterval(next,2000);
+
+//        $("#wrap_pic").mouseover(function(){
+//            window.clearInterval(intervalObj)
+//        });
+//
+//        $("#wrap_pic").mouseout(function(){
+//            intervalObj = window.setInterval(next,2000)
+//        })
+    </script>
+    <style>
+        body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+        html{font-size:62.5%;}
+        /*body 字体大小12px*/
+        body{font-size:1.2rem;}
+        img{border:none;}
+        li{list-style:none;}
+        input,select,textarea{outline:none;border:none;background: none;}
+        textarea{resize:none;}
+        a{text-decoration: none;}
+
+
+        /*正式css*/
+
+        span{
+            width:50px;
+            height:50px;
+            display: inline-block;
+            background-color:#555555;
+        }
+        #banner{
+            width:990px;
+            height:625px;
+            overflow: hidden;
+            margin:0 auto;
+        }
+        ul{
+            width:300%;
+            height:100%;
+            list-style: none;
+        }
+        ul li{
+            float:left;
+        }
+    </style>
+</head>
+<body>
+<div id="banner">
+    <ul id="wrap_pic">
+        <li><a href="#"><img src="1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="3.jpg" alt=""></a></li>
+    </ul>
+    <div class="bannerNum">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</div>
+</body>
+</html>

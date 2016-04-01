@@ -114,3 +114,17 @@ var $li_2 = $("<li title='雪梨'>雪梨</li>");
 
 $("ul").append($li_1);
 $("ul").append($li_2);
+
+$('#content').bind("click",function(event){
+    var txt = $('#msg').html() + "<p> 外层div元素被单击.</p>";
+    $('#msg').html(txt);
+    event.stopPropagation(); //停止事件冒泡   
+});
+
+$('#sub').bind ("click",function(event){
+    var username = $("#username").val();
+    if(username = ""){
+        #("#msg").html("<p>wenben</p>");
+        event.preventDefault(); // 阻止默认行为
+    }
+})
