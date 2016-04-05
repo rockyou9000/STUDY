@@ -61,7 +61,7 @@
 <script src="../../plugins/jquery2.1.4.js" type="text/javascript"></script>
 <script>
     $(function(){
-        var num, count,n=0;
+        var count,n=0;
         count =$(".wrap li").length;
         $(".wrap li:not(:first-child)").hide();
 
@@ -89,7 +89,7 @@
 
             if (n == count){n = 0}
             $(".btn>span").eq(n).trigger("click");
-        })
+        });
 
         $(".banner_btn .pre").click(function(){
             n = --n;
