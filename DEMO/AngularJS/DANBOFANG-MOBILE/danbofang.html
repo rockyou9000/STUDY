@@ -415,11 +415,8 @@
 <div ng-app="myApp">
     <div class="product_tab" ng-controller="myTab">
         <ul>
-            <li ><a href="#home">{{title1}}</a></li>
-            <li ><a href="#about">{{title2}}</a></li>
-            <li ><a href="#contact">{{title3}}</a></li>
+            <li ng-repeat="tab in tabs" ><a href="{{tab.href}}">{{tab.title}}</a></li>
         </ul>
-        {{5+5}}
     </div>
     <div class="tap"   ng-controller="myData" >
 
@@ -431,8 +428,6 @@
         <script type="text/ng-template" id="home.htm">
             <div >
                 <h2> 首页 </h2>
-                <a href="#about">关于</a>
-                <a href="#contact">联系</a>
                 <img  class="product_img" ng-repeat="x in names"  src="{{x}}" alt="">
                 <div class="clear"></div>
             </div>
@@ -441,8 +436,6 @@
 
         <script type="text/ng-template" id="about.htm">
                 <h2> 关于 </h2>
-                <a href="#home">首页</a>
-                <a href="#contact">联系</a>
                 <img class="product_img" ng-repeat="y in names2"  src="{{y}}" alt="">
                 <div class="clear"></div>
 
@@ -450,8 +443,6 @@
 
         <script type="text/ng-template" id="contact.htm">
                 <h2> 联系 </h2>
-                <a href="#home">首页</a>
-                <a href="#about">关于</a>
                 <img  class="product_img" ng-repeat="z in names3"  src="{{z}}" alt="">
                 <div class="clear"></div>
         </script>
@@ -501,15 +492,15 @@
         var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
         app.controller('myTab', function($scope){
-              $scope.title1 ="镇店之宝";
-              $scope.title2 ="大家都喜欢";
-              $scope.title3 ="私房皂";
+//              $scope.title1 ="镇店之宝";
+//              $scope.title2 ="大家都喜欢";
+//              $scope.title3 ="私房皂";
 
-//            $scope.tabs = [
-//                {title : '镇店之宝' },
-//                {title : '大家都喜欢'},
-//                {title : '私房皂' }
-//            ];
+            $scope.tabs = [
+                {title : '镇店之宝' ,href:'#about'},
+                {title : '大家都喜欢',href:'#home'},
+                {title : '私房皂' ,href:'#contact'}
+            ];
 //            $scope.urls = [
 //                {name : '#home' },
 //                {name : '#about'},
