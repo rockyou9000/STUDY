@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>侧边导航</title>
+    <script src="script/api.js"></script>
+    <script src="script/zepto/zepto.js"></script>
+    <link href="css/aui.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header class="aui-bar aui-bar-nav aui-bar-dark">
+	<a class="iconfont icon-liebiao aui-pull-left" tapmode onclick="openSlid();">菜单</a>
+    <a class="aui-btn aui-bar-dark aui-pull-left" id="back">
+        <span class="aui-iconfont aui-icon-left"></span>返回
+    </a>
+    <div class="aui-title">林清轩</div>
+</header>
+
+<div class="topMenu">
+        <div class="topBar">
+        		<img src="image/logo.png"  alt="" />
+				<div class="submenu" tapmode onclick="openSlid();"></div>
+                <div class="magnifier">返回</div>
+        </div>
+</div>
+<script>
+
+function funcGoto(url){
+	api.openFrame({
+		name : 'home',
+		url : url,
+		rect: {
+            x: 0,
+            y: 53,
+            w: api.frameWidth,
+            h: 'auto'
+        },
+        showProgress : false
+	});
+}
+
+function subMclose(){
+	$('.subM').addClass('none');
+}
+
+//打开滑动区域
+function openSlid(){
+	api.openSlidPane({
+		type : 'left'
+	});
+}
+
+
+
+(function($){
+    apiready = function () {
+		var thisUrl = 'views/index.html'
+        //var thisUrl = 'http://gezi123.120.sql.sh.cn/siteforapicloud/index.html'
+        api.openFrame({
+	        name: 'home',
+	        url: thisUrl,
+	        rect: {
+		        x:0,
+		        y:53,
+		        w:api.winWidth,
+		        h:'auto'
+	        },
+	        hScrollBarEnabled: false,
+	        showProgress: false
+        });
+            
+        api.parseTapmode();
+		
+		function goBack(){
+			alert(111);
+			api.execScript({
+	        	frameName: 'home',
+		    	script: 'api.historyBack(function(ret, err){if(ret.status){}else{}});'
+		    });
+		}
+		
+		api.toast({
+			msg:'欢迎光临林清轩官网',
+			duration:3000,
+			location:'bottom'
+	    });
+	    
+	    $('.magnifier').on('singleTap',function(){
+			goBack();
+		});
+	    
+    }
+
+})(Zepto);
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>侧边导航</title>
+    <script src="script/api.js"></script>
+</head>
+<body>
+<script>
+    apiready = function () {
+    	api.setStatusBarStyle({
+    		style : 'dark'
+        });
+        api.openSlidLayout({
+        	//侧滑类型，安卓只支持LEFT
+            type: 'left',
+            //左侧滑时，侧滑window停留时露出的宽度
+            leftEdge: 100,
+            fixedPane: {
+                name: 'leftmenu',
+                url: 'leftmenu.html',
+                bgColor:'#fff',
+                vScrollBarEnabled:true
+            },
+            slidPane: {
+                name: 'main',
+                url: 'main.html'
+            }
+        }, function (ret) {
+			
+        });
+        
+        api.lockSlidPane();
+        
+    }
+</script>
+</body>
+</html>

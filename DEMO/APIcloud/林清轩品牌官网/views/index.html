@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <meta charset="UTF-8">
+    <title>林清轩品牌商城</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+	<script src="http://touch.code.baidu.com/touch-0.2.14.min.js"></script>
+</head>
+<body style="position:relative;">
+<div id="Main">
+
+	<div class="btmtext">
+        <ul>
+            <li>
+                <a>联系我们</a>
+                <a>招贤纳士</a>
+                <a>友情链接</a>
+            </li>
+            <li>
+                版权所有 沪ICP备11014464号
+            </li>
+        </ul>
+	</div>
+
+<!--浮动二级目录-->
+	<div id="Main-mask"></div>
+
+    
+    
+    <!-- 顶部输入框 start-->
+    <div class="topSearch" id="tSearch" style="display:none;">
+        <div class="inner">
+             <div class="magnifier"></div>
+             <div class="cancel"></div>
+             <input type="text" class="inputstyle" value="请输入关键词" />
+        </div>
+    </div>
+    <!-- 顶部输入框 end-->
+    
+    <!-- 首页上部区域BANNER切换  start-->
+    <div id="bannerFocus" class="focusTop">
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="#"><img _src="img/demo_banner1.jpg" /></a></li>
+                <li><a href="#"><img _src="img/demo_banner1.jpg" /></a></li>
+                <li><a href="#"><img _src="img/demo_banner1.jpg" /></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#bannerFocus",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"left", 
+            autoPlay:true,//自动播放
+            autoPage:true, //自动分页
+            switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+        });
+    </script>
+    <!-- 首页上部区域BANNER切换  end-->
+    
+    <!-- 首页中部广告区域 start-->
+    <div class="pregion">
+        <!-- 首页中部广告左侧 start-->
+        <div class="p-left" id="p-lbox">
+            <div class="p-left-top"></div>
+            
+            <div class="p-lbox">
+                <div id="bannerFocus-mleft" class="focusMiddle">
+                	<div class="prev"></div>
+        			<div class="next"></div>
+                    <div class="hd">
+                        <ul></ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li><a href="#"><img _src="img/demo_mpic_l.jpg" /></a></li>
+                            <li><a href="#"><img _src="img/demo_mpic_l.jpg" /></a></li>
+                            <li><a href="#"><img _src="img/demo_mpic_l.jpg" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 首页中部广告左侧 end-->
+        <script type="text/javascript">
+            TouchSlide({ 
+                slideCell:"#bannerFocus-mleft",
+                //titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul", 
+                effect:"left", 
+                autoPlay:true,//自动播放
+                autoPage:false, //自动分页
+                switchLoad:"_src", //切换加载，真实图片路径为"_src" 
+            	prevCell:"#bannerFocus-mleft .prev",
+            	nextCell:"#bannerFocus-mleft .next"
+			});
+        </script>
+        
+        <!-- 首页中部广告右侧 start-->
+        <div class="p-right">
+            <div class="p-right-top"></div>
+            <div class="p-rbox">
+            	<div id="bannerFocus-mright" class="focusMiddle">
+                	<div class="prev"></div>
+        			<div class="next"></div>
+                    <div class="hd">
+                        <ul></ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li><a href="#"><img src="img/demo_mpic_r.jpg"  alt=""/></a></li>
+                            <li><a href="#"><img src="img/demo_mpic_r.jpg"  alt=""/></a></li>
+                            <li><a href="#"><img src="img/demo_mpic_r.jpg"  alt=""/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            TouchSlide({ 
+                slideCell:"#bannerFocus-mright",
+                //titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul", 
+                effect:"left", 
+                autoPlay:true,//自动播放
+                autoPage:false, //自动分页
+                switchLoad:"_src", //切换加载，真实图片路径为"_src"
+				prevCell:"#bannerFocus-mright .prev",
+            	nextCell:"#bannerFocus-mright .next" 
+            });
+        </script>
+        
+        <!-- 首页中部广告右侧 end-->
+        
+        <div class="clear"></div>
+    </div>
+    <!-- 中部广告区域 end-->
+    
+    <!--底部产品轮播 start-->
+  
+    <div class="focusBtmarea" id="bannerFocus-btm">
+        <div class="prev"></div>
+        <div class="next"></div>
+        <div class="focusBtm">
+            <div class="hd">
+                <ul></ul>
+            </div>
+            <div class="bd">
+                <ul id="thisMove">
+                    <li><a href="#"><img src="img/demo_mpic_l.jpg" /></a></li>
+                    <li class="seled"><a href="#"><img src="img/demo_mpic_l.jpg" /></a></li>
+                    <li><a href="#"><img src="img/demo_mpic_l.jpg" /></a></li>
+                    <li><a href="#"><img src="img/demo_mpic_l.jpg" /></a></li>
+                    <li><a href="#"><img src="img/demo_mpic_l.jpg" /></a></li>
+                    <li><a href="#"><img src="img/demo_mpic_l.jpg" /></a></li>
+                </ul>
+            </div>  
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#bannerFocus-btm",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"left", 
+            autoPlay:false,//自动播放
+            autoPage:true, //自动分页
+            switchLoad:"_src", //切换加载，真实图片路径为"_src"
+            defaultIndex:1,
+            prevCell:".prev",
+            nextCell:".next"
+        });
+        $(function(){
+            var slidesli = $('.focusBtm .bd ul li');
+            function Move(){
+                $('.focusBtm .hd ul li').each(function(index){
+                    if($(this).hasClass('on')){
+                        $(slidesli[index]).addClass("seled").siblings().removeClass("seled");
+                    }
+                });	
+            }
+            $(".next, .prev").on("click",function(){
+                Move();
+            })
+			touch.on('#thisMove','swipeleft swiperight',function(ev){
+				Move();	
+			});
+			
+        });		
+    </script>
+	
+    <!--底部产品轮播 end-->
+    
+
+</div>
+
+<!-- 底部导航 START -->
+<style>
+.bottomMenu a{
+color:#ffffff;
+}
+</style>
+    <div class="bottomMenu">
+        <ul style="text-align:center;">
+            <a href="#">无连接</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">无连接</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+           	<a href="friendlink.html">友情链接</a>
+        </ul>
+    </div>
+    <!-- 网站底部导航 end -->
+
+<script>
+	window.onload = function(){
+		var oImgHeight=$(".bd ul li img").height();
+		$(".focus").css("height",oImgHeight);
+	}
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>
