@@ -1,0 +1,5 @@
+.ta{display:table;border-spacing: 5px;width: 350px;height:350px}
+.line{display: table-row}
+.l1,.l2,.l3{display: table-cell;border-radius: 4px;background-color: red;width:100px;height:100px;}
+
+
