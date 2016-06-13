@@ -22,7 +22,7 @@ var doc = document, query = 'querySelectorAll', claname = 'getElementsByClassNam
 //插入css
 document.head.appendChild((function(){
     var link = doc.createElement('link');
-    link.href = 'css/layer.css';
+    link.href = '/ba/css/layer.css';
     link.type = 'text/css';
     link.rel = 'styleSheet';
     link.id = 'layermcss';
@@ -75,11 +75,11 @@ Layer.prototype.view = function(){
         if(btns === 0 || !config.btn){
             return '';
         }
-        btndom = '<span type="1">'+ config.btn[0] +'</span>'
+        btndom = '<li><span type="1" class="confirm-btn">'+ config.btn[0] +'</span></li>'
         if(btns === 2){
-            btndom = '<span type="0">'+ config.btn[1] +'</span>' + btndom;
+            btndom = '<li><span type="0" class="cancel-btn">'+ config.btn[1] +'</span></li>' + btndom;
         }
-        return '<div class="layermbtn">'+ btndom + '</div>';
+        return '<div class="layermbtn"><ul class="flex-equal">'+ btndom + '</ul></div>';
     }());
     
     if(!config.fixed){
@@ -145,10 +145,10 @@ Layer.prototype.action = function(config, elem){
     
     //确认取消
     if(config.btn){
-        var btns = elem[claname]('layermbtn')[0].children, btnlen = btns.length;
+        var btns = elem[claname]('layermbtn')[0].getElementsByTagName("ul")[0].children, btnlen = btns.length;
         for(var ii = 0; ii < btnlen; ii++){
             btns[ii].onclick = function(){
-                var type = this.getAttribute('type');
+                var type = this.getElementsByTagName("span")[0].getAttribute('type');
                 if(type == 0){
                     config.no && config.no();
                     layer.close(that.index);
