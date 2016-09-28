@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="img" IsPhone="false" SpriteImgFileType="Png" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="a9.png" LocationX="0" LocationY="0" />
+    <Sprite Path="a3.png" LocationX="0" LocationY="14" />
+    <Sprite Path="a8.png" LocationX="0" LocationY="58" />
+    <Sprite Path="a1.png" LocationX="0" LocationY="100" />
+    <Sprite Path="a11.png" LocationX="0" LocationY="137" />
+    <Sprite Path="a2.png" LocationX="0" LocationY="181" />
+    <Sprite Path="a5.png" LocationX="0" LocationY="228" />
+    <Sprite Path="a10.png" LocationX="0" LocationY="286" />
+    <Sprite Path="a4.png" LocationX="0" LocationY="334" />
+    <Sprite Path="a6.png" LocationX="0" LocationY="356" />
+    <Sprite Path="a7.png" LocationX="0" LocationY="386" />
+  </SpriteList>
+</SpriteFile>
